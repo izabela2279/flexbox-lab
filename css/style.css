@@ -1,5 +1,5 @@
 html {
-  box-sizing: border-box
+  box-sizing: border-box;
 }
 
 /* The Universal Selector */
@@ -12,9 +12,66 @@ html {
 }
 
 body {
-  background-color: gray;
+  background-color: white;
 /* Use a system font, if none are available use an available sans-sarif   font */
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   margin: 0;
+}
+
+header {
+  display:flex;
+  justify-content: space-between;
+  border-bottom: 1px solid gray;
+}
+
+header > div {
+  display: flex;
+  align-items: center;
+}
+
+#headers > p {
+  margin: 10px;
+}
+
+#actions > button {
+  margin: 10px;
+  border: 1px solid gray;
+  border-radius: 50px;
+  padding: 5px 5px;
+
+}
+subheading {
+  display: flex;
+  border-bottom: 1px solid gray;
+}
+
+subheading > div {
+  display: flex;
+  align-items: center;
+}
+
+#dropdown > p {
+  border: 1px solid black;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 5px 5px;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 50px;
+  padding: 0px 72px 32px 72px;
+  gap: 32px;
+}
+
+#box > img {
+  border-radius: 50px;
+}
+
+.box-footer {
+  display: flex;
+  justify-content: space-between;
 }
